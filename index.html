@@ -11,23 +11,23 @@
 <!-- Google Tag Manager -->
 <script>
 (function(w,d,s,l,i){
-    w[l]=w[l]||[];
+w[l]=w[l]||[];
 
-    w[l].push({
-        'gtm.start': new Date().getTime(),
-        event:'gtm.js'
-    });
+w[l].push({
+'gtm.start': new Date().getTime(),
+event:'gtm.js'
+});
 
-    var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),
-    dl=l!='dataLayer' ? '&l='+l : '';
+var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),
+dl=l!='dataLayer' ? '&l='+l : '';
 
-    j.async=true;
+j.async=true;
 
-    j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;
 
-    f.parentNode.insertBefore(j,f);
+f.parentNode.insertBefore(j,f);
 
 })(window,document,'script','dataLayer','GTM-PTL58DRH');
 </script>
@@ -50,34 +50,64 @@ style="display:none;visibility:hidden">
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 
+<!-- Background -->
 <div class="background"></div>
 
-<header>
-    <h1>Apple Touch Keyboard Pro</h1>
+<!-- Header -->
+<header class="header">
 
-    <p>
-        Tecnologia, ergonomia e inovação em um único dispositivo.
-    </p>
+    <div class="logo">
+         Apple Touch Keyboard Pro
+    </div>
+
+    <nav class="navbar">
+        <a href="#hero">Início</a>
+        <a href="#history">História</a>
+        <a href="#benefits">Benefícios</a>
+        <a href="#stats">Estatísticas</a>
+    </nav>
+
 </header>
 
-<button class="theme-btn" id="themeBtn">🌙</button>
+<!-- Theme Button -->
+<button class="theme-btn" id="themeBtn">
+🌙
+</button>
 
-<section class="hero">
+<!-- Hero -->
+<section class="hero" id="hero">
 
     <div class="hero-text">
 
-        <h2>
-            O futuro da interação entre teclado e touchpad.
-        </h2>
+        <span class="tag">
+            Tecnologia Multitouch
+        </span>
+
+        <h1>
+            O futuro dos teclados inteligentes.
+        </h1>
 
         <p>
             Inspirado nos conceitos futuristas da Apple e Logitech,
-            este projeto apresenta uma experiência premium com design
-            minimalista, animações 3D e tecnologia multitouch.
+            este projeto apresenta uma experiência premium com
+            design minimalista, teclado funcional e touchpad avançado.
         </p>
+
+        <div class="hero-buttons">
+
+            <button class="primary-btn">
+                Explorar
+            </button>
+
+            <button class="secondary-btn">
+                Saiba Mais
+            </button>
+
+        </div>
 
     </div>
 
+    <!-- Keyboard -->
     <div class="keyboard-container">
 
         <input
@@ -130,39 +160,62 @@ style="display:none;visibility:hidden">
 
         </div>
 
+        <!-- Touchpad -->
         <div class="touchpad" id="touchpad">
+
             <div class="touch-glow"></div>
+
+            <div class="touch-info">
+                Touchpad Inteligente
+            </div>
+
         </div>
 
     </div>
 
 </section>
 
-<section class="history">
+<!-- History -->
+<section class="history" id="history">
 
     <h2>História e Evolução</h2>
 
-    <p>
-        Tanto a Apple quanto empresas como Logitech ajudaram
-        a popularizar teclados com touchpad integrado,
-        permitindo maior praticidade, ergonomia e mobilidade.
-    </p>
+    <div class="history-grid">
 
-    <p>
-        Os teclados touchpad modernos unem digitação e navegação
-        em um único dispositivo, reduzindo a necessidade de mouse
-        externo e aumentando a produtividade.
-    </p>
+        <div class="history-card">
+            <h3>Apple</h3>
 
-    <p>
-        Com o avanço da tecnologia multitouch e interfaces
-        inteligentes, os touchpads evoluíram para oferecer
-        gestos, precisão e integração com sistemas operacionais modernos.
-    </p>
+            <p>
+                A Apple revolucionou a experiência multitouch,
+                trazendo precisão, design minimalista e integração
+                inteligente entre hardware e software.
+            </p>
+        </div>
+
+        <div class="history-card">
+            <h3>Logitech</h3>
+
+            <p>
+                A Logitech expandiu o conceito de teclados touchpad
+                para produtividade e mobilidade em ambientes modernos.
+            </p>
+        </div>
+
+        <div class="history-card">
+            <h3>Futuro</h3>
+
+            <p>
+                Os teclados inteligentes evoluem para integração com IA,
+                sensores hápticos e comandos por gestos avançados.
+            </p>
+        </div>
+
+    </div>
 
 </section>
 
-<section class="benefits">
+<!-- Benefits -->
+<section class="benefits" id="benefits">
 
     <h2>Benefícios</h2>
 
@@ -184,13 +237,13 @@ style="display:none;visibility:hidden">
         </div>
 
         <div class="card">
-            <h3>Design</h3>
-            <p>Visual minimalista inspirado no macOS.</p>
+            <h3>Design Premium</h3>
+            <p>Visual futurista inspirado no ecossistema Apple.</p>
         </div>
 
         <div class="card">
             <h3>Produtividade</h3>
-            <p>Mais eficiência e rapidez na navegação.</p>
+            <p>Mais eficiência durante navegação e digitação.</p>
         </div>
 
         <div class="card">
@@ -202,23 +255,24 @@ style="display:none;visibility:hidden">
 
 </section>
 
-<section class="stats">
+<!-- Statistics -->
+<section class="stats" id="stats">
 
-    <h2>Estatísticas</h2>
+    <h2>Estatísticas em Tempo Real</h2>
 
     <div class="stats-box">
 
-        <div>
+        <div class="stat-card">
             <h3 id="counter">0</h3>
             <p>Teclas pressionadas</p>
         </div>
 
-        <div>
+        <div class="stat-card">
             <h3 id="timer">0s</h3>
             <p>Tempo digitando</p>
         </div>
 
-        <div>
+        <div class="stat-card">
             <h3 id="speed">0</h3>
             <p>Velocidade simulada</p>
         </div>
@@ -226,6 +280,22 @@ style="display:none;visibility:hidden">
     </div>
 
 </section>
+
+<!-- Footer -->
+<footer class="footer">
+
+    <h3>Apple Touch Keyboard Pro</h3>
+
+    <p>
+        Projeto acadêmico com foco em inovação,
+        experiência do usuário e design tecnológico.
+    </p>
+
+    <span>
+        © 2026 - Desenvolvido por Jorge Filho
+    </span>
+
+</footer>
 
 <script src="script.js"></script>
 
